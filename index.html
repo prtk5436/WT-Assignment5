@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VJHS NANDGAON</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="Validator.js"></script>
+</head>
+<style>
+</style>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <img id="logo" src="images/logonew.png" alt="VJHS logo">
+                <h1>
+                    <img id="logo1" src="images/nspm.png" alt="VJHS logo" style="margin-top: 8px;">
+                    <br>
+                    V. J. High
+                    School‚ Nandgaon</h1>
+            </div>
+        </header>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="#home">Home</a>
+                    </li>
+                    <li><a href="#form" onclick="showForm()">Admission</a></li>
+                    <li><a href="#table" onclick="view()">Records</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="main"><a name="home"></a>
+            <div role="main" class="container">
+                <br><br>
+                <center>
+                    <h2>About the V. J. High School</h2>
+                </center>
+                <br>
+                <div class="col-md-12">
+
+                    <article style=" text-align: justify;">We believe in providing a rich, stimulating environment for
+                        personalized as well as collaborative
+                        learning. This environment is conducive to fostering Academic Excellence and CreativeBrilliance.
+                        We are challenged at all times with global development and advancement. The schooleducation,
+                        being the foundation and the fundamental stage of a child’s development, has to work towards
+                        facing this challenge and strengthening a society. The ingeniously designed CBSE curriculum at
+                        The VJHS School is in sync with our motto, ‘EDUCATE, EXCEL, EMPOWER’. </article>
+
+                </div>
+                <hr>
+                <center>
+                    <h4>Academic Session Resumes with Virtual Classrooms and Online Pedagogy </h4>
+                    <h6>Never stop learning, because life never stops teaching.</h6>
+
+                </center><br>
+                <div class="col-sm-12 ">
+                    <article style=" text-align: justify;">As you all know, due to the CoViD19 pandemic, the world is
+                        facing a crisis like never before.
+                        This is an unprecedented situation in terms of breadth and scale, from a global health, social
+                        and economic standpoint. The VJHS School Team and the management sincerely wishes for the safety
+                        and
+                        well being of all the children, parents and family members.</article>
+
+                    <article style=" text-align: justify;">We, at The VJHS School, stand on a strong foundation and are
+                        committed to Academic Excellence
+                        &amp; Creative Brilliance. Our educators, who believe in imparting the basic skill of Lifelong
+                        Learning,have been working very hard on learning and preparing themselves for continuing the
+                        knowledge sharing process through new mediums using technology. It has been a learning journey
+                        for our
+                        educators as well, and we hope the children enjoy and adapt to this as long as the lockdown
+                        lasts.
+                    </article>
+
+                    <article style=" text-align: justify;">Today, every house is a school and every parent is a teacher.
+                        We, at The VJHS School, through our
+                        Online Teaching, Worksheets and Guidance and through our Virtual Classrooms, aim to bring
+                        routine and discipline into the lives of our children. Of course, your support as parents is
+                        absolutely imperative to make this a success. </article>
+
+                    <form>
+                        <div class="form-group"> <br /><br />
+                            <input type="button" value="Go to Admission Form" onclick="showForm()"
+                                class="btn btn-success btn-block" />
+                        </div>
+                </div>
+                </form><br>
+            </div>
+            <div id="f1" style="display: none;"><a name="form"></a>
+                <hr>
+                <form id="fid" name="myform">
+                    <h2>Application Form</h2><br>
+                    <div class="form-group">
+                        <strong>Student Name</strong>
+                        <br />
+                        <input type="text" id="name" name="fname" class="form-control" />
+                        <span id="s1"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <strong>Mobile</strong>
+                        <br />
+                        <input type="text" id="mobile" name="mobile" maxlength="10" class="form-control" />
+                        <span id="s2"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <strong>Email</strong>
+                        <br />
+                        <input type="text" id="email" name="email" class="form-control" />
+                        <span id="s3"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <strong>Standard</strong>
+                        <br />
+                        <select name="country" id="country" class="form-control">
+                            <option>Select</option>
+                            <option>Std. 5</option>
+                            <option>Std. 6</option>
+                            <option>Std. 7</option>
+                            <option>Std. 8</option>
+                            <option>Std. 9</option>
+                            <option>Std. 10 [SSC]</option>
+                        </select>
+                        <span id="s4"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <strong>Gender</strong>
+                        <br />
+                        <div class="form-inline">
+                            <label><input type="radio" name="gender" value="Male" style="margin: 10px;"> Male</label>
+                            <label><input type="radio" name="gender" value="Female" style="margin: 15px;">
+                                Female</label>
+                            <span id="s5"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <strong>Hobbies </strong>
+                        <br />
+                        <div class="form-inline">
+                            <label><input type="checkbox" class="hobbies" name="m" value="Movies" style="margin: 10px;">
+                                Movies</label>
+                            <label><input type="checkbox" class="hobbies" name="s" value="Sports" style="margin: 10px;">
+                                Sports</label>
+                            <label><input type="checkbox" class="hobbies" name="p" value="Coding" style="margin: 10px;">
+                                Coding</label>
+                            <label><input type="checkbox" class="hobbies" name="c" value="Music" style="margin: 10px;">
+                                Music</label>
+                            <span id="s6"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <br> <span id="s7"></span>
+                        <input type="button" value="SUBMIT" id="add" onclick="addRow('fid','dataTable')"
+                            class="btn btn-success btn-block" /><br>
+                        <input type="button" value="VIEW" id="add" onclick="view()" class="btn btn-danger btn-block" />
+                    </div>
+                </form>
+            </div>
+            <br><br>
+            <hr>
+            <br><br>
+            <div role="main" class="container">
+                <a name="table"></a> <span id="s8"></span><br>
+                <div id="r1" style="display: none;">
+                    <table id="dataTable" width="auto" class="table table-bordered table-dark table-hover">
+                        <tr>
+                            <td style="width:10%;">Select Item</td>
+                            <td style="width:10%;">Row No.</td>
+                            <td>Student Name</td>
+                            <td>Mobile Number</td>
+                            <td>Email id</td>
+                            <td>Standard</td>
+                            <td>Gender</td>
+                            <td>Hobbies</td>
+                        </tr>
+                    </table>
+                </div>
+                <br><br> <br>
+        </section>
+    </div>
+    <footer>
+        <div class="container"><a
+                href="https://www.google.com/search?q=v+j+high+school+nandgaon&rlz=1C1CHBD_enIN883IN883&hl=en&source=lnms&sa=X&ved=0ahUKEwjLyJiws6LqAhVCJHIKHfR-CAoQ_AUICSgA&biw=1745&bih=836&dpr=1.1"><img><img
+                    src="images/icons8-google-48.png"></a>
+            <a href="https://www.facebook.com/vjhighschoolnandgaon1918/"><img src="images/icons8-facebook-48.png">
+            </a>
+            <a href="https://www.youtube.com/watch?v=9uSjXbdkkFc"><img src="images/icons8-play-button-48.png"></a>
+            <p>&copy;2020 VJHS Nandgaon. All Right Reserved | Designed &amp; Developed By : Pratik Pawar</p>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
