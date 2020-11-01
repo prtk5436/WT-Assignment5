@@ -1,5 +1,6 @@
 
 var counter = 0;
+let base_url = "http://localhost/ass5/";
 function showForm() {
     var x = document.getElementById("f1");
     if (x.style.display === "none") {
@@ -86,7 +87,7 @@ function addRow(formID, tableID) {
 
 
     else {
-
+        let url1=base_url+"insert.php?&fname="+fname+"&mobile="+mobile+"&email="+email+"&standard="+country+"&gender="+gender;
         counter++;
 
         document.getElementById("s8").innerHTML = " ";
