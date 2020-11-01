@@ -87,7 +87,7 @@ function addRow(formID, tableID) {
 
 
     else {
-        let url1=base_url+"insert.php?&fname="+fname+"&mobile="+mobile+"&email="+email+"&standard="+country+"&gender="+gender;
+        let url1=base_url+"insert.php?fname="+fname+"&mobile="+mobile+"&email="+email+"&standard="+country+"&gender="+gender";
         counter++;
 
         document.getElementById("s8").innerHTML = " ";
